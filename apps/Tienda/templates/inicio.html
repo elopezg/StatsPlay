@@ -1,0 +1,104 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block head %}
+{% endblock %}
+
+
+
+ {% block body %}
+
+ 
+
+<!-- ola -->
+
+        <!--Carousel-->
+<div class="container1 mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">La comunidad de fighting games de Duoc UC</h1>
+            </div>
+        </div>
+        <br>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="{% static 'img/luchafoto1.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="{% static 'img/luchafoto2.jpeg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="{% static 'img/luchafoto3.jpeg' %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+</div>
+        <!--Fin Carousel-->
+
+        <h1 style="text-align: center;">Perfiles mas vistos</h1>
+
+        <div class="container">
+            <div class="row mt-5">
+                <h2>Jugadores de Street Fighter</h2>
+                {% for p in cate_perros %}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{p.imagen_url.url}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{p.nombre}}</h5>
+                          <p class="card-text">{{p.descripcion}}</p>
+                        </div>
+                      </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    
+            <div class="container">
+            <div class="row mt-5">
+                <h2>Jugadores de Mortal Kombat</h2>
+                {% for p in cate_gatos %}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{p.imagen_url.url}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{p.nombre}}</h5>
+                          <p class="card-text">{{p.descripcion}}</p>
+                        </div>
+                      </div>
+                </div>
+                {% endfor %}
+                </div>
+            </div>
+        
+        
+    
+
+
+        
+
+        
+    
+</div>
+
+<div id="map"></div>
+{% endblock %}
+    
+
+
+
+
+
+            
+
+            
+   

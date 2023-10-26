@@ -1,0 +1,83 @@
+h1{
+    color:rgb(34, 36, 194);
+    
+}
+
+  /*tema color*/
+:root{
+    color-scheme: light dark;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+
+/*api*/
+#map {
+    height: 500px;
+    width: 100%;
+
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .carousel-inner{
+    border-radius: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .clockdate-wrapper{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+}
+#temp{
+  font-family: 'Times New Roman', Times, serif;
+    font-size: 125%;
+}
+#location{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 125%;
+}
+#estado{
+  font-family: 'Times New Roman', Times, serif;
+    font-size: 125%;
+}
+
+  

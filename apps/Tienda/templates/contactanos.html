@@ -1,0 +1,44 @@
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<body >
+    <h1 class="contacto text-center mt-5">Contactanos</h1>
+
+    <div class="todo mb-5">
+        <div class="container">
+                <form action="" id="miniFormulario" class="row g-3 mt-3">
+                    <div class="col-6">
+                        <label for="inputName">Ingrese Nombre: </label>
+                        <input id="inputName" name="inputName" type="text" class="form-control" placeholder="ingrese su nombre: " required>
+                    </div>
+
+                    <div class="col-6">
+                        <label for="inputLastName">Ingrese Apellido: </label>
+                        <input id="inputLastName" name="inputLastName" type="text" class="form-control" placeholder="ingrese su apellido: " required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputEmail">Ingrese numero telefono: </label>
+                        <input id="inputEmail" name="inputEmail" type="text" class="form-control" placeholder="ingrese su numero: " required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputNumber">Dejanos un mensaje: </label>
+                        <input id="inputNumber" name="inputNumber" type="text" class="form-control" placeholder="Ingrese un mensaje: " required>
+                    </div>
+
+                    <button class="btn btn-primary mt-3">Enviar</button>
+
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+{% endblock %}
+```
