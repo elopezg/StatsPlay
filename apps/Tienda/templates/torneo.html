@@ -1,0 +1,30 @@
+{% extends "./base.html" %}
+
+{% load static %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla</title>
+</head>
+<body>
+    <h1>Batalla</h1>
+    <p>Bienvenido a la batalla. ¡Haz clic en unirte para participar!</p>
+    <button id="joinButton">Unirse a la batalla</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{% static 'js/battle.js' %}"></script>
+</body>
+</html>
+
+
+
+{% endblock %}

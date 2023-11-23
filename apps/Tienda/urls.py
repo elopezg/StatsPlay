@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
     path('',views.cargarInicio, name='home'),
     path('agregarProductoForm',views.agregarProducto),

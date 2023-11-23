@@ -7,37 +7,64 @@
 
 {% block body %}
 <body >
-    <h1 class="contacto text-center mt-5">Contactanos</h1>
+    <h1 class="contacto text-center mt-5">Torneos</h1>
 
     <div class="todo mb-5">
         <div class="container">
                 <form action="" id="miniFormulario" class="row g-3 mt-3">
                     <div class="col-6">
-                        <label for="inputName">Ingrese Nombre: </label>
-                        <input id="inputName" name="inputName" type="text" class="form-control" placeholder="ingrese su nombre: " required>
+                        <label for="inputName">Ingrese Nombre de Usuario: </label>
+                        <input id="inputName" name="inputName" type="text" class="form-control" placeholder="Ingrese su nombre de Usuario: " required>
                     </div>
 
                     <div class="col-6">
-                        <label for="inputLastName">Ingrese Apellido: </label>
-                        <input id="inputLastName" name="inputLastName" type="text" class="form-control" placeholder="ingrese su apellido: " required>
+                        <label for="inputLastName">Ingrese Nombre del videojuego: </label>
+                        <input id="inputLastName" name="inputLastName" type="text" class="form-control" placeholder="Ingrese Nombre del Videojuego: " required>
                     </div>
 
                     <div class="col-12">
                         <label for="inputEmail">Ingrese numero telefono: </label>
-                        <input id="inputEmail" name="inputEmail" type="text" class="form-control" placeholder="ingrese su numero: " required>
+                        <input id="inputEmail" name="inputEmail" type="text" class="form-control" placeholder="Ingrese su numero: " required>
                     </div>
 
                     <div class="col-12">
-                        <label for="inputNumber">Dejanos un mensaje: </label>
-                        <input id="inputNumber" name="inputNumber" type="text" class="form-control" placeholder="Ingrese un mensaje: " required>
+                        <label for="inputNumber">Informacion adicional: </label>
+                        <input id="inputNumber" name="inputNumber" type="text" class="form-control" placeholder="Informacion adicional: " required>
                     </div>
 
-                    <button class="btn btn-primary mt-3">Enviar</button>
-
-            </form>
+                    <div class="container mb-5">
+                        <form action="#">
+                          <h1 style="color:rgb(255, 0, 0)" > <!--Titulo del modal --></h1>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Inscribirse
+                        </button>
+                      </form>
+                  </div>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-
+    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="tituloModal">  <!-- aqui iria el titulo del modal --> </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="bodyModal">
+                <h3 Style="color:rgb(61, 7, 253)"> ¡¡¡Te has registrado Con exito al Torneo!!!</h3>
+                <p > Tu Proximo contrincante sera el usuario "JORDANO".</p>
+                <img src="{% static 'img/jordano.png' %}" id="trajebaño" style="max-width: 400px; max-height: 400px;" >
+                <p > El combate se realizara el dia 28 de Noviembre, a las 10:00 AM en el auditorio.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" id="btnCerrar" class="btn btn-secondary" data-bs-dismiss="modal">Entendido!!</button>
+                  </div>
+                  </div>
+                </div>
+      </div>
     
 </body>
 {% endblock %}
